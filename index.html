@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabriel Diniz - Links</title>
+  <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; overflow: hidden; }
+    body { background: #000; font-family: Arial, sans-serif; }
+
+    /* Container da cena */
+    .scene-container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
+    .scene-container img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Hotspots clicáveis */
+    .link-hotspot {
+      position: absolute;
+      display: block;
+      cursor: pointer;
+    
+    }
+    .link-hotspot.github { // Aqui ajustei os containers em cada hotspots clicáveis, para fazer isso de uma forma mais fácil eu coloquei um background color.
+      left: 12%; top: 42%; width: 8%; height: 12%;
+    }
+    .link-hotspot.linkedin {
+      left: 26%; top: 40%; width: 8%; height: 12%;
+    }
+    .link-hotspot.instagram {
+      left: 35%; top: 40%; width: 8%; height: 12%;
+    }
+    .link-hotspot.whatsapp {
+      left: 55%; top: 38%; width: 8%; height: 12%;
+    }
+    .link-hotspot.email {
+      left: 64%; top: 40%; width: 6%; height: 12%;
+    }
+    .link-hotspot.cv {
+      left: 78%; top: 35%; width: 10%; height: 30%;
+    }
+  </style>
+</head>
+<body>
+  
+
+  <div class="scene-container">
+    <!-- Imagem da plataforma -->
+    <img src="Plataforma Flutuante no Espaço.png" alt="Plataforma Flutuante no Espaço">
+
+    <!-- Áreas clicáveis sobre cada painel -->
+    <a href="https://github.com/GabrielDinizTech" target="_blank" class="link-hotspot github" aria-label="GitHub"></a>
+    <a href="https://www.linkedin.com/in/gabrieldiniztech/" target="_blank" class="link-hotspot linkedin" aria-label="LinkedIn"></a>
+    <a href="https://instagram.com/gd_viera" target="_blank" class="link-hotspot instagram" aria-label="Instagram"></a>
+    <a href="https://wa.me/5512997036370" target="_blank" class="link-hotspot whatsapp" aria-label="WhatsApp"></a>
+    <a href="mailto:gabrieldiniztech@hotmail.com" target="_blank" class="link-hotspot email" aria-label="Email"></a>
+    <a href="GabrielDiniz_Curriculo_DesenvolvedorDados2025.pdf" download class="link-hotspot cv" aria-label="Download CV"></a>
+  </div>
+</body>
+</html>
