@@ -28,6 +28,7 @@
       position: absolute;
       display: block;
       cursor: pointer;
+      background-color: #ffffff;
     
     }
     .link-hotspot.github { 
@@ -48,10 +49,34 @@
     .link-hotspot.cv {
       left: 78%; top: 35%; width: 10%; height: 30%;
     }
+#rotate-overlay {
+  position: fixed;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: rgba(0,0,0,0.85);
+  color: #fff;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  z-index: 9999;
+}
+/* Quando em retrato, bloqueia o conteúdo e mostra o aviso */
+@media only screen and (orientation: portrait) {
+  #site-content { display: none; }
+  #rotate-overlay { display: flex; }
+}
+
+
   </style>
 </head>
 <body>
-  
+  <div id="rotate-overlay">
+  <p>Por favor, gire seu celular para o modo paisagem para visualizar este site.</p>
+</div>
+<div id="site-content">
+  <!-- TODO: seu conteúdo responsivo aqui -->
+</div>
 
   <div class="scene-container">
     <!-- Imagem da plataforma -->
